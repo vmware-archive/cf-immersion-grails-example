@@ -1,0 +1,30 @@
+<plugin name='autobase' version='1.0.0.0' grailsVersion='1.2.1 &gt; *'>
+  <author>Robert Fischer, Jun Chen, Antoine roux</author>
+  <authorEmail>robert.fischer@smokejumperit.com</authorEmail>
+  <title>Automate your database work as much as possible</title>
+  <description>This plugin marries the established Liquibase core with Grails development processes in order to to minimze the amount of database code you have to think about.
+
+The approach to this plugin is to leave the database update mode ("hbm2ddl.auto" value) as "update", and to manage alterations to the database schema through checking in changesets to a folder.  The changesets are made up of Liquibase's many "refactorings": http://www.liquibase.org/manual/home#available_database_refactorings
+</description>
+  <documentation>http://github.com/RobertFischer/autobase/wikis</documentation>
+  <resources>
+    <resource>BuildConfig</resource>
+    <resource>Config</resource>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+  </resources>
+  <dependencies>
+    <resolvers>
+      <resolver type='grailsPlugins' name='grailsPlugins' />
+      <resolver type='mavenCentral' />
+      <resolver type='mavenLocal' />
+    </resolvers>
+    <dependency group='commons-io' name='commons-io' version='1.4' conf='compile' transitive='true' />
+    <dependency group='org.slf4j' name='slf4j-ext' version='1.5.8' conf='compile' transitive='true' />
+    <dependency group='commons-beanutils' name='commons-beanutils' version='1.8.0' conf='compile' transitive='true' />
+    <dependency group='commons-lang' name='commons-lang' version='2.4' conf='compile' transitive='true' />
+    <dependency group='org.liquibase' name='liquibase-core' version='2.0.3' conf='compile' transitive='true' />
+    <dependency group='org.liquibase.ext' name='modify-column' version='2.0.0' conf='runtime' transitive='true' />
+  </dependencies>
+  <behavior />
+</plugin>

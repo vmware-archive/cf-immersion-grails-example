@@ -1,0 +1,10 @@
+Testsuite: grails.sandbox.TekEventSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 2.043 sec
+------------- Standard Output ---------------
+--Output from The toString should return the city and name of the event--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from The toString should return the city and name of the event--
+------------- ---------------- ---------------
+
+Testcase: The toString should return the city and name of the event took 1.998 sec

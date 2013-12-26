@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="localhost" name="grails.sandbox.TekEventSpec" tests="1" time="2.043" timestamp="2013-11-18T03:01:54">
+  <properties />
+  <testcase classname="grails.sandbox.TekEventSpec" name="The toString should return the city and name of the event" time="1.998" />
+  <system-out><![CDATA[--Output from The toString should return the city and name of the event--
+]]></system-out>
+  <system-err><![CDATA[--Output from The toString should return the city and name of the event--
+]]></system-err>
+</testsuite>

@@ -1,0 +1,35 @@
+<plugin name='cloud-foundry' version='1.2.3' grailsVersion='1.3.3 &gt; *'>
+  <author>Burt Beckwith</author>
+  <authorEmail>beckwithb@vmware.com</authorEmail>
+  <title>Cloud Foundry Integration</title>
+  <description>Cloud Foundry Integration</description>
+  <documentation>http://grails-plugins.github.com/grails-cloud-foundry/</documentation>
+  <type>CloudFoundryGrailsPlugin</type>
+  <resources>
+    <resource>grails.plugin.cloudfoundry.CloudFoundryTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='http://maven.springframework.org/milestone' url='http://maven.springframework.org/milestone/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='org.cloudfoundry' name='cloudfoundry-caldecott-lib' version='0.1.1' />
+      <dependency group='org.cloudfoundry' name='cloudfoundry-client-lib' version='0.7.5' />
+    </compile>
+    <runtime>
+      <dependency group='org.codehaus.jackson' name='jackson-mapper-asl' version='1.6.2' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='cloud-support' version='1.0.11' />
+    </compile>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
